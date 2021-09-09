@@ -1,61 +1,55 @@
-/* Global Settings */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-
-:root{
-  --background: #1B1B2F;
-  --main: #162447;
-  --sub: #1F4068;
-  --font: #E43F5A;
-  --font2: #ffff;
+/* Grid layout */
+#container{
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-body{
-  background-color:var(--background);
-  color:var(--font);
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-/* Grid Layout */
-#mainGrid{
+header, main, footer{
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  gap:10px;
 }
 
-#mainGrid > section{
-  background-color:var(--main);
-  padding:10px;
+header{
+  grid-column: span 2;
 }
 
-.subGrid{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-gap:5px;
-}
-
-.subGrid > section{
-  background-color:var(--sub);
-  padding:10px;
-}
-
-/* Headers */
-.mainTitle{
-  font-size:2vw;
-  text-align: center;
-}
-
-.subTitle{
-  font-size:2vw;
-  text-align: center;
-  color: var(--font2)
-}
-
-/* Elements */
-.largeText{
-  font-size:3vw;
-  text-align: center;
+header > section{
+  background-color: blue;
   padding: 10px;
 }
 
+main > section{
+  background-color:green;
+  padding: 10px;
+}
+
+footer > section{
+  background-color: purple;
+  padding: 10px;
+}
+
+footer{
+  grid-column: span 2;
+}
+input{
+  padding:5px;
+  border-radius: 10px;
+  transition: all 1s;
+}
+input:hover{
+  background-color:grey;
+}
+button{
+  background-color: black;
+  color: white;
+  padding:10px;
+  border-radius: 10px;
+  transition: all 1s;
+}
+button:hover{
+  background-color:white;
+  color: black;
+}
