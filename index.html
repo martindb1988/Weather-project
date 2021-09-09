@@ -10,37 +10,35 @@
 
 </head>
 <body>
-    <h1 class="mainTitle">Weather panel</h1>
-    <h3 class="subTitle">a project by Martin de Boer</h3>
+    <h1 class="largeText" onload="weather()">Weather panel</h1>
 
     <div id="mainGrid">
 
         <section class="subGrid">
-            <section>5</section>
-            <section>6</section>
-            <section>7</section>
-            <section>8</section>
+            <section class="mainTitle">Location </section>
+            <section class="mainTitle">Region</section>
+            <section id="locationDisplay" class="subTitle"></section>
+            <section id="region" class="subTitle"></section>
         </section>
 
-        <section onload="weather()">
-            <div id="Temperature" class="largeText"></div>
-            <div id="feelsLike" class="largeText"></div>
-        </section>
+        <section> </section>
 
         <section id="weatherIcon" class="icon">
-            <img
-            class="test"
-            src=""
-            alt="WeatherIcon">
-
-
+                <!-- image -->
         </section>
         
         <section class="subGrid">
-            <section>1</section>
-            <section>2</section>
-            <section>3</section>
-            <section>4</section>
+            <section class="mainTitle">Temperature</section>
+            <section class="mainTitle">Feels like</section>
+
+            <section>
+                    <div id="Temperature"class="subTitle"></div>
+            </section>
+
+            <section> 
+                    <div id="feelsLike" class="subTitle"></div>
+            </section>
+
         </section>
 
     </div>
