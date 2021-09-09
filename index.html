@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Weather project</title>
+    <title>Weather panel</title>
 
     <link rel="stylesheet" href="CSS/stylesheet.css">
-    
+
 </head>
-
 <body>
-    <div id="container">
-        <header>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem architecto excepturi, voluptatem ipsum repudiandae culpa consequuntur quo deleniti dicta odio velit recusandae, saepe iusto, itaque inventore veniam. Voluptatibus, aspernatur laudantium?</header>
+    <h1 class="mainTitle">Weather panel</h1>
+    <h3 class="subTitle">a project by Martin de Boer</h3>
 
-        <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia tempora deserunt aperiam corporis illo sed incidunt saepe reiciendis nulla voluptatibus labore fugiat libero exercitationem, dolorem reprehenderit! Veniam, eveniet aliquid!</main>
+    <div id="mainGrid">
 
-        <footer>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, iste dicta in, non sequi perspiciatis aperiam dignissimos sint id, possimus illo laborum repudiandae cupiditate expedita voluptatum asperiores reprehenderit unde voluptas!</footer>
+        <section class="subGrid">
+            <section>5</section>
+            <section>6</section>
+            <section>7</section>
+            <section>8</section>
+        </section>
+
+        <section onload="weather()">
+            <div id="Temperature" class="largeText"></div>
+            <div id="feelsLike" class="largeText"></div>
+        </section>
+
+        <section id="weatherIcon" class="icon">
+            <img
+            class="test"
+            src=""
+            alt="WeatherIcon">
+
+
+        </section>
         
-    </div>   
+        <section class="subGrid">
+            <section>1</section>
+            <section>2</section>
+            <section>3</section>
+            <section>4</section>
+        </section>
+
+    </div>
+
     <script src="JS/api.js"></script>
+
 </body>
 </html>
