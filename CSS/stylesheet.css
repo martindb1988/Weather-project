@@ -6,6 +6,7 @@
   --main: #162447;
   --sub: #1F4068;
   --font: #E43F5A;
+  --font2: #ffff;
 }
 
 body{
@@ -46,8 +47,9 @@ body{
 }
 
 .subTitle{
-  font-size:1vw;
+  font-size:2vw;
   text-align: center;
+  color: var(--font2)
 }
 
 /* Elements */
@@ -57,12 +59,3 @@ body{
   padding: 10px;
 }
 
-.icon{
-  position: relative;
-}
-
-.icon > img{
-  position: absolute;
-  margin-left:20%;
-  width:5vw
-}
