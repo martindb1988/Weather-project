@@ -95,6 +95,15 @@ main{
   border-image: linear-gradient(to right, var(--blocks), var(--gradient)) 1;
 }
 
+.condition{
+  align-items: center;
+  padding:40px;
+  font-size: 2em;
+}
+
+.condition > img{
+  height:100px;
+}
 /* Searchbox */
 
 #searchBox, #submitButton{
