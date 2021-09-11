@@ -1,55 +1,111 @@
+/* Global settings */
+:root{
+  --background: #171717;
+  --blocks: #242424;
+  --headers: #DA0037;
+  --gradient: #132a68;
+  --font: #EDEDED;
+}
+
+body{
+  background-color: var(--background);
+  color: var(--font);
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--headers);
+}
+h1{
+  font-size: 4em;
+}
+h2{
+  font-size:2em;
+}
+
+section{
+  background-color: var(--blocks);
+}
+main{
+  background-color: var(--background)
+}
+
 /* Grid layout */
-#container{
-  display:grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-
-header, main, footer{
+.wrapper {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap:10px;
+  grid-template-columns: 50px 1fr 1fr 50px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    ". a a ."
+    ". b b ."
+    ". c c ."
+    ". d d .";
+  align-items: center;
+  text-align: center;
+
 }
 
-header{
-  grid-column: span 2;
+.item1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: a;
 }
 
-header > section{
-  background-color: blue;
-  padding: 10px;
+.item1 > section{
+  margin: 5px;
+  border:2px solid;
+  border-image: linear-gradient(to right, var(--blocks), var(--headers)) 1;
 }
 
-main > section{
-  background-color:green;
-  padding: 10px;
+.item2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-area: b; 
 }
 
-footer > section{
-  background-color: purple;
-  padding: 10px;
+.item2 > section{
+  padding:20px;
+  margin: 5px;
+  border:2px solid;
+  border-image: linear-gradient(to right, var(--blocks), var(--gradient)) 1;
 }
 
-footer{
-  grid-column: span 2;
+.item3 {
+  grid-area: c;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-input{
-  padding:5px;
-  border-radius: 10px;
-  transition: all 1s;
+
+.item3 > section{
+  padding:20px;
+  margin: 10px;
+  border:2px solid;
+  border-image: linear-gradient(to right, var(--blocks), var(--gradient)) 1;
 }
-input:hover{
-  background-color:grey;
+
+.item4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-area: d;
 }
-button{
-  background-color: black;
-  color: white;
+
+.item4 > section{
+  padding:20px;
+  margin: 10px;
+  border:2px solid;
+  border-image: linear-gradient(to right, var(--blocks), var(--gradient)) 1;
+}
+
+/* Searchbox */
+
+#searchBox, #submitButton{
   padding:10px;
+  width:80%;
+  background-color: var(--background);
+  color: var(--font);
   border-radius: 10px;
-  transition: all 1s;
 }
-button:hover{
-  background-color:white;
-  color: black;
+
+#submitButton:hover{
+  border: 1px solid var(--gradient);
+  transition: all 1s;
 }
