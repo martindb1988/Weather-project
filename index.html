@@ -12,26 +12,42 @@
 <body>
         <div class="wrapper">
                 <div class="item1">
+                    <section> </section>
+
                     <section>
-                        <h2>Search here</h2>
-                        <p>Fill out a place here where you would like to know the weather from.</p>
-                        <input type="text" id="searchBox">
-                        <p><input type="submit" value="Show me the weather" id="submitButton"></p>
+                         <input 
+                         id="search"
+                         placeholder="Search for...">
+                         
+                         <button 
+                         value="Submit" 
+                         id="submit" 
+                         onclick=weather()> Show me the weather
+                        </button>
+
                     </section>
-                    <main><h1>Weather panel</h1></main>
-                    
-                    <section><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, esse? Corporis alias eos eaque quo assumenda quae nemo optio nam repellat similique, perferendis accusantium id blanditiis quia impedit consequatur deserunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eum possimus quasi laborum numquam, quas quaerat at vitae consequuntur doloremque nam autem tenetur ipsa cum asperiores quo impedit! Vitae, fugit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae eius numquam enim voluptatum tempore minus est! Nostrum, molestias laudantium. Itaque cum animi voluptatum autem laudantium unde sint, labore excepturi enim.
-                    </p>
+                    <section class="topRight">
+                        <h2>Location</h2>
+                        <div id="City"></div>
+                        <div id="Region"></div>
+                        <div id="Country"></div>
                     </section>
                 </div>
 
                 <div class="item2">
-                    <section>1</section>
+                    <section>
+                        <h2>Conditions</h2>
+                        <div id="Temp_c"></div>
+                        <div id="Temp_f"></div>
+                        <div id="Condition"></div>
+                    </section>
                     <section>2</section>
                     <section>3</section>
                     <section>4</section>
                 </div>
                 
         </div>
+    
+        <script src="JS/api.js"></script>
 </body>
 </html>
