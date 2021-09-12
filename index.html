@@ -12,7 +12,16 @@
 <body>
         <div class="wrapper">
                 <div class="item1">
-                    <section> </section>
+                    <section> 
+                            <div>
+                                Temperature unit: 
+                                <input type="radio" id="optionCelsius" value="Celsius" name="temperatureUnit" checked>
+                                <label for="optionCelsius">Celsius</label>
+
+                                <input type="radio" id="optionFahrenheit" value="Fahrenheit" name="temperatureUnit">
+                                <label for="optionFahrenheit">Fahrenheit</label>
+                            </div>               
+                    </section>
 
                     <section>
                          <input 
@@ -37,8 +46,7 @@
                 <div class="item2">
                     <section>
                         <h2>Conditions</h2>
-                        <div id="Temp_c"></div>
-                        <div id="Temp_f"></div>
+                        <div id="Temperature"></div>
                         <div id="Condition"></div>
                     </section>
                     <section>2</section>
