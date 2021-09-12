@@ -6,7 +6,8 @@ body {
       radial-gradient(at 47% 33%, hsl(208.47, 100%, 50%) 0, transparent 59%), 
       radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
   background-size: stretch;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  font-size:1em;
 }
 
 section {
@@ -73,15 +74,23 @@ section {
   background-color: #666691
 }
 
-
-.topRight > h2{
-  font-size:2em;
-  text-align: center;
-  margin:0px;
-}
-
 section > div{
   text-align: left;
-  font-size: 20px
 }
 
+/* Responsive rules */
+@media(max-width: 1330px){
+  .item1, .item2 {
+    grid-template-columns: 1fr;
+    }
+  }
+
+@media(max-width: 450px){
+  #submit{
+    width: 100%;
+    }
+    div{
+      margin:0;
+    }
+  }
+  
