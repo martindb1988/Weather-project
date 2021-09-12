@@ -27,11 +27,9 @@ function weather(){
 
             // Determination if user chose Celsius or Fahrenheit
             if(tempUnit == "Celsius"){
-                console.log("The temperature is set to Celsius")
-                Temperature.innerText = "Temperature Celsius: " + character.current.temp_c + " C°"
+                return Temperature.innerText = "Temperature Celsius: " + character.current.temp_c + " C°"
             } else
-                console.log("The temperature is set to Fahrenheit")
-                Temperature.innerText = "Temperature Fahrenheit: " + character.current.temp_f + " F°"
+                return Temperature.innerText = "Temperature Fahrenheit: " + character.current.temp_f + " F°"
             }) 
         }
 
