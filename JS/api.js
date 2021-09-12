@@ -17,6 +17,12 @@ function weather(){
     const value = document.getElementById("search").value
     let searchPhrase = value;
     
+        // Check if value is provided in search box
+        if(value === ""){
+            alert("Please provide an city name")
+        }
+    
+    
     fetch(`https://api.weatherapi.com/v1/current.json?key=3fda992ef93f4eb4b4e54823210809&q=${searchPhrase}&aqi=no`)
         .then(response => response.json())
         .then(character =>  {
