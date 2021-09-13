@@ -10,6 +10,9 @@ function weather(){
     let Temperature = document.getElementById("Temperature")
     let Condition = document.getElementById("Condition")
 
+    // Weather icon
+    let weatherIcon = document.getElementById("weatherIcon")
+
     // Celsius or Fahrenheit
     let tempUnit = document.querySelector('input[name="temperatureUnit"]:checked').value;
     
@@ -29,13 +32,19 @@ function weather(){
             City.innerText =  "City:  " + character.location.name
             Region.innerText =  "Region:  " + character.location.region
             Country.innerText = "Country: " + character.location.country
-            Condition.innerText = "Condition: " + character.current.condition.text
+            Condition.innerText = character.current.condition.text
 
+            // Assigning weather icon to IMG element
+            let weatherIconJson = character.current.condition.icon
+            let imageUrl = "http:" + (weatherIconJson)
+            weatherIcon.src=(imageUrl)
+
+            
             // Determination if user chose Celsius or Fahrenheit
             if(tempUnit == "Celsius"){
-                return Temperature.innerText = "Temperature Celsius: " + character.current.temp_c + " C°"
+                return Temperature.innerText = character.current.temp_c + " C°"
             } else
-                return Temperature.innerText = "Temperature Fahrenheit: " + character.current.temp_f + " F°"
+                return Temperature.innerText = character.current.temp_f + " F°"
             }) 
         }
 

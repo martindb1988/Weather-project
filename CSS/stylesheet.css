@@ -82,6 +82,17 @@ section > div{
   text-align: left;
 }
 
+#Condition{
+  font-size:30px;
+  text-align: center;
+}
+
+#Temperature{
+  font-size:50px;
+  text-align:center;
+  vertical-align: middle;
+}
+
 /* Responsive rules */
 @media(max-width: 1330px){
   .item1, .item2 {
