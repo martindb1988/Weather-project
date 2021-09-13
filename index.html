@@ -10,18 +10,30 @@
 
 </head>
 <body>
+    <h1>Weather panel</h1>
         <div class="wrapper">
                 <div class="item1">
                     <section> 
                             <div>
                                 <h2>Temperature unit</h2> 
                                 <p>
-                                    <input type="radio" id="optionCelsius" value="Celsius" name="temperatureUnit" checked>
+                                    <input 
+                                    type="radio" 
+                                    id="optionCelsius" 
+                                    value="Celsius" 
+                                    name="temperatureUnit"
+                                    onclick="weather()" 
+                                    checked>
                                     <label for="optionCelsius">Celsius</label>
                                 </p>
                                 
                                 <p>
-                                    <input type="radio" id="optionFahrenheit" value="Fahrenheit" name="temperatureUnit">
+                                    <input 
+                                    type="radio" 
+                                    id="optionFahrenheit" 
+                                    value="Fahrenheit" 
+                                    name="temperatureUnit"
+                                    onclick="weather()">
                                     <label for="optionFahrenheit">Fahrenheit</label>
                                 </p>
 

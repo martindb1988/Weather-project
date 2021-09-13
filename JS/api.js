@@ -42,10 +42,12 @@ function weather(){
             
             // Determination if user chose Celsius or Fahrenheit
             if(tempUnit == "Celsius"){
-                return Temperature.innerText = character.current.temp_c + " C°"
+                return Temperature.innerText = character.current.temp_c + "° C"
             } else
-                return Temperature.innerText = character.current.temp_f + " F°"
+                return Temperature.innerText = character.current.temp_f + "° F"
             }) 
         }
+
+        
 
 

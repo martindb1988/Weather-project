@@ -93,6 +93,10 @@ section > div{
   vertical-align: middle;
 }
 
+img[src=""] {
+  display: none;
+}
+
 /* Responsive rules */
 @media(max-width: 1330px){
   .item1, .item2 {
