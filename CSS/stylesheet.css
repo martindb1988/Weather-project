@@ -5,11 +5,7 @@
 body {
   background-color: #111927;
   color:#ffffff;
-  background-image: 
-      radial-gradient(at 47% 33%, hsl(208.47, 100%, 50%) 0, transparent 59%), 
-      radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
-  background-size: stretch;
-  background-repeat: no-repeat;
+  background: #373055;
   font-size:1em;
   font-family: 'Roboto', sans-serif;
 }
